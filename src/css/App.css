@@ -1,0 +1,238 @@
+body {
+  background-color: #222222;
+}
+
+.App {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  min-width: 480px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.search-bar-label {
+  text-align: left;
+  font-size: 18px;
+  color: #999999;
+}
+
+.field-search {
+  width: 100%;
+  height: 50px;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fafafa;
+  text-align: left;
+  background-color: #222222;
+  box-shadow: none;
+}
+
+
+.field-search::placeholder {
+  color: #999999;
+}
+
+.recent-albuns-label {
+  text-align: left;
+  font-size: 24px;
+  color: #fafafa;
+}
+
+.interactive-album-name {
+  text-align: center;
+  font-size: 14px;
+  color: #fafafa;
+  margin: 10px;
+}
+
+.interactive-album-artist {
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+}
+
+.music-album-name {
+  text-align: center;
+  font-size: 18px;
+  color: #fafafa;
+}
+
+.music-id {
+  text-align: center;
+  font-size: 18px;
+  color: #999999;
+}
+
+.music-name {
+  text-align: left;
+  font-size: 18px;
+  color: #fafafa;
+  min-width: 200px;
+}
+
+
+.music-duration {
+  text-align: right;
+  font-size: 18px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+.music-album {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  margin-top: 20px;
+}
+
+.album-details {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 99;
+  margin-right: 100px;
+}
+
+.music-container {
+  grid-column-start: 2;
+  grid-row-end: auto;
+  display: grid;
+  grid-template-columns: 50px 9fr 100px 100px;
+  grid-template-rows: 50px;
+}
+
+.button-go-back-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+}
+
+.go-back-container-clickable {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 30px 100px;
+  grid-template-rows: 50px;
+}
+
+.go-back-container-clickable:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.button-go-back {
+  text-align: left;
+  margin: auto;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #fafafa;
+}
+
+.icon-go-back {
+  margin: auto;
+  height: 30px;
+  width: 15px;
+}
+
+.grid-albuns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 0.3fr));
+}
+
+.interactive-album {
+  margin: 15px;
+  background-color: #444444;
+  max-width: 480px;
+}
+
+.interactive-album:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.interactive-album-image {
+  padding: 25px;
+  width: 70%;
+}
+
+.spotify-song-panel {
+  width: 100%;
+  background-color: #111111;
+  border-top: 1px solid #fafafa;
+  min-height: 50px;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  margin-top: auto;
+}
+
+.spotify-play-song {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.spotify-play-song:hover {
+  opacity: 50%;
+}
+
+.current-song {
+  text-align: center;
+  font-size: 14px;
+  color: #fafafa;
+  margin-top: 10px;
+}
+
+.screen-container {
+  margin-top: 10vh;
+}
+
+.footer-filler {
+  min-height: 150px;
+}
+
+.recent-albuns-transition-enter {
+  transform: translateX(-150%);
+}
+.recent-albuns-transition-enter-active {
+  transform: translateX(0%);
+  transition: all 400ms;
+}
+.recent-albuns-transition-exit {
+  transform: translateX(0%);
+}
+.recent-albuns-transition-exit-active {
+  transform: translateX(-150%);
+  transition: all 400ms;
+}
+
+.searched-albuns-transition-enter {
+  transform: translateX(110%);
+}
+.searched-albuns-transition-enter-active {
+  transform: translateX(0%);
+  transition: all 400ms;
+}
+.searched-albuns-transition-exit {
+  transform: translateX(0%);
+}
+.searched-albuns-transition-exit-active {
+  transform: translateX(110%);
+  transition: all 400ms;
+}
+
+.spotify-login-image {
+  width: 50px;
+  height: 50px;
+  margin:10px;
+}
