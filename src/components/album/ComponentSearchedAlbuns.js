@@ -9,7 +9,7 @@ export default function ComponentSearchedAlbuns() {
 
     return <div>
         <ButtonCancelSearch />
-        <p className='recent-albuns-label'>Resultados encontrados para "{searchInput.staticValue}"</p>
+        <p className='recent-albuns-label'>Results found for "{searchInput.staticValue}"</p>
         <div className='grid-albuns'>
           {searchResult.albuns}
         </div>

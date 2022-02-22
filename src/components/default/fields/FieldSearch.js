@@ -11,7 +11,7 @@ export default function FieldSearch() {
     }
 
     return <div>
-        <p className='search-bar-label'>Busque por artistas, álbuns ou músicas</p>
-        <input className='field-search' placeholder={'Comece a escrever...'} onChange={handleChange}></input>
+        <p className='search-bar-label'>Search for artists, albums or songs</p>
+        <input className='field-search' placeholder={'Start typing...'} onChange={handleChange}></input>
     </div>;
 }

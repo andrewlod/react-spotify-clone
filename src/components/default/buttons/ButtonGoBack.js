@@ -14,7 +14,7 @@ export default function ButtonGoBack() {
   return <div className='button-go-back-container'>
     <div className='go-back-container-clickable' onClick={goBack}>
       <GoBackIcon className='icon-go-back' />
-      <p className='button-go-back'>Voltar</p>
+      <p className='button-go-back'>Go back</p>
     </div>
   </div>;
 }

@@ -1,23 +1,43 @@
-# Getting Started with Create React App
+# Spotify Web Player Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a frontend project made with React, integrated with Spotify Web API that allows users to search for any Spotify albums based on a query string, view songs inside an album and play them if the user is authenticated into Spotify and has Spotify Premium.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+The following features have been implemented in this project currently:
+- Search for albums with query string
+- View a specific album
+- Login with Spotify
+- Play Spotify songs (Premium only)
+- View recently searched albums in the main page
+- View recently clicked albums in the main page
+
+## Structure & Libraries
+
+Some libraries have been included to ensure the code is clean, well-structured and functioning, such as:
+- `Axios`: Easy REST API communication with backend.
+- `Redux`: Structured data with reducers and actions to avoid passing state properties deep into React components.
+- `Uuid`: Used on React components inside list so each one has an unique ID, without the need of incremental IDs from iteration.
+
+
+## Run and build
+
+This project requires the backend project: https://github.com/andrewlod/spotify-clone-backend.git to be running along with it. Both of them are npm projects, therefore the build and run processes for both of them are similar. Please refer to the backend repository `README.md` file for any instructions on how to install it. 
+
+Here is a list of commands used in order to run, build or test the project:
+
+### `npm install` or `npm i`
+
+Installs all dependencies required to run and build the project. This command must be run before any attempt to build or start the application.
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Unit tests are currently not implemented in this project.
 
 ### `npm run build`
 
@@ -25,46 +45,21 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Preview
 
-### `npm run eject`
+Here are a few screenshots of how the project looks. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Main page
+![plot](./readme_assets/main.png)
+### Searching for albums
+![plot](./readme_assets/search.png)
+### Viewing album
+![plot](./readme_assets/album.png)
+### Logged into Spotify
+![plot](./readme_assets/logged_in.png)
+### Playing song
+![plot](./readme_assets/playing.png)
+### Recent albums
+![plot](./readme_assets/recently1.png)
+![plot](./readme_assets/recently2.png)

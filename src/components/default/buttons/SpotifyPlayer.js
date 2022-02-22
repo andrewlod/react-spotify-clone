@@ -81,7 +81,7 @@ export default function SpotifyPlayer() {
   return <div className='spotify-song-panel'>
     {ready && paused && <img src={playButton} className='play-button' className='spotify-play-song' onClick={() => {player.togglePlay()}} />}
     {ready && !paused && <img src={pauseButton} className='play-button' className='spotify-play-song' onClick={() => {player.togglePlay()}} />}
-    {ready && track != null && <p className='current-song'>Tocando agora: {track}</p>}
-    {ready && track == null && <p className='current-song'>Nenhuma música tocando</p>}
+    {ready && track != null && <p className='current-song'>Now playing: {track}</p>}
+    {ready && track == null && <p className='current-song'>No songs playing</p>}
   </div>;
 }

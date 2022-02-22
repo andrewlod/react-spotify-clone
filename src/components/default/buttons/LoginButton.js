@@ -7,6 +7,6 @@ export default function LoginButton(props) {
     const navigate = useNavigate()
 
   return <div className='spotify-song-panel'>
-          <a href='/login' title='Entrar com Spotify'><img className='spotify-login-image' src={loginImage} /></a>
+          <a href='/login' title='Login with Spotify'><img className='spotify-login-image' src={loginImage} /></a>
   </div>;
 }

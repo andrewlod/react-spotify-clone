@@ -55,11 +55,11 @@ export default function ComponentRecentAlbuns() {
     }, [])
 
     return <div>
-        {clickComponents.length > 0 && <p className='recent-albuns-label'>Álbuns selecionados recentemente</p>}
+        {clickComponents.length > 0 && <p className='recent-albuns-label'>Recently selected albums</p>}
         <div className='grid-albuns'>
             {clickComponents.length > 0 && clickComponents}
         </div>
-        <p className='recent-albuns-label'>Álbuns buscados recentemente</p>
+        <p className='recent-albuns-label'>Recently searched albums</p>
         <div className='grid-albuns'>
             {searchComponents.length > 0 && searchComponents}
         </div>
